@@ -5,7 +5,7 @@ import ActionsButtons from "./actions-buttons";
 const Navbar = () => {
   return (
     <div className="max-w-7xl m-auto">
-      <div className="flex justify-between">
+      <div className="flex justify-between items-cente">
         <Logo />
         <NavigationBar />
         <ActionsButtons />
