@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import Home from "./page";
-
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,10 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={outfit.className}>
-        {children}
-        <Home></Home>
-      </body>
+      <body className={outfit.className}>{children}</body>
     </html>
   );
 }
