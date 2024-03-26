@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
-const outfit = Outfit({ subsets: ["latin"] });
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "900"],
+  style: ["normal", "italic"],
+});
 
 export const metadata: Metadata = {
   title: "Soporte Tesis",
@@ -15,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={outfit.className}>{children}</body>
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }
