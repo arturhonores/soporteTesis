@@ -6,15 +6,13 @@ const Hero = () => {
         <div>
           <h1>Titulo</h1>
         </div>
-        <div>
-          <Image
-            src="/hero-svg.svg"
-            width={800}
-            height={500}
-            priority={true}
-            alt="logo-soporte-tesis"
-          ></Image>
-        </div>
+        {/* <Image
+          src="/hero-svg.svg"
+          width={800}
+          height={500}
+          priority={true}
+          alt="logo-soporte-tesis"
+        ></Image> */}
       </div>
     </section>
   );

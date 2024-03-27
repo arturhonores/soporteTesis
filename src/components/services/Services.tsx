@@ -12,7 +12,7 @@ const Services = () => {
             </p>
           </div>
           <div className="bg-white rounded-lg text-center p-8 shadow-lg">
-            <h3>Asesoría</h3>
+            <h3>Prueba</h3>
             <p>
               Expertos en cada materia te ayudarán a organizar tus ideas y a
               presentar una investigación adaptada a lo que necesites.
