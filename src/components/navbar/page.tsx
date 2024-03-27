@@ -25,7 +25,7 @@ const Navbar = () => {
       </div>
       <div className="bg-secondary flex justify-center items-center gap-1 p-1">
         <p className="text-white font-bold">Contáctanos</p>
-        <FaWhatsapp className="text-white text-xl"></FaWhatsapp>
+        {/* <FaWhatsapp className="text-white text-xl"></FaWhatsapp> */}
         <p className="text-white font-bold">+52 55 6177 6839</p>
       </div>
     </>
