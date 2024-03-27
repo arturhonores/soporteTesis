@@ -8,7 +8,7 @@ import {
 const Faq = () => {
   return (
     <div className="max-w-7xl mx-auto py-16">
-      <h2 className="text-3xl font-bold text-center">Tienes dudas</h2>
+      <h2 className="text-3xl font-black text-center">Tienes dudas</h2>
       <div className="max-w-4xl mx-auto px-4">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">

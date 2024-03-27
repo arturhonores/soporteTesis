@@ -21,34 +21,28 @@ const NavigationBar = () => {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <Link
-              href="/"
-              legacyBehavior
-              passHref
-            >
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <Link href="/" legacyBehavior passHref>
+              <NavigationMenuLink
+                className={`${navigationMenuTriggerStyle()} text-xl`}
+              >
                 Inicio
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link
-              href="/"
-              legacyBehavior
-              passHref
-            >
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <Link href="/" legacyBehavior passHref>
+              <NavigationMenuLink
+                className={`${navigationMenuTriggerStyle()} text-xl`}
+              >
                 Nosotros
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link
-              href="/"
-              legacyBehavior
-              passHref
-            >
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <Link href="/" legacyBehavior passHref>
+              <NavigationMenuLink
+                className={`${navigationMenuTriggerStyle()} text-xl`}
+              >
                 Contacto
               </NavigationMenuLink>
             </Link>
