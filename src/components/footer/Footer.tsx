@@ -94,8 +94,8 @@ const Footer = () => {
                   key={icon.id}
                   href={icon.href}
                   className="text-3xl text-secondary"
-                  whileHover={{ translateY: -3, color: "#16A34A" }}
-                  whileTap={{ scale: 1.1 }}
+                  whileHover={{ scale: 1.2, color: "#16A34A" }}
+                  whileTap={{ scale: 0.9 }}
                 >
                   {icon.nameICon}
                 </MotionLink>
