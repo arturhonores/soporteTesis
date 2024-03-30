@@ -7,9 +7,9 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <>
-      <div className="max-w-7xl m-auto px-3">
-        <div className="flex justify-between items-center h-20">
+    <section className="bg-white sticky top-0 z-50">
+      <div className="max-w-7xl m-auto px-4">
+        <div className="flex justify-between items-center h-16">
           <Logo />
           <NavigationBar />
           <ActionsButtons />
@@ -28,7 +28,7 @@ const Navbar = () => {
         <FaWhatsapp className="text-white text-xl"></FaWhatsapp>
         <p className="text-white font-bold">+52 55 6177 6839</p>
       </div>
-    </>
+    </section>
   );
 };
 
