@@ -78,7 +78,7 @@ const Testimonials = () => {
                 align: "center",
               }}
               orientation="vertical"
-              className="w-full max-w-md"
+              className="w-full max-w-xl"
               plugins={[plugin.current]}
               // onMouseEnter={plugin.current.stop}
               // onMouseLeave={plugin.current.reset}
@@ -129,9 +129,9 @@ const Testimonials = () => {
             </Carousel>
           </div>
           <div className="w-full md:w-1/2 order-1 md:order-2">
-            <h3 className="text-3xl font-black m-auto max-w-sm text-center">
+            <h2 className="text-3xl font-black m-auto max-w-sm text-center">
               Testimonios que nos llenan de orgullo
-            </h3>
+            </h2>
           </div>
         </div>
       </section>
