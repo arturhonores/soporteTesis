@@ -3,16 +3,55 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaChevronRight } from "react-icons/fa";
 
+const fadeInAnimationLeft = {
+  initial: {
+    opacity: 0,
+    x: -100,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 1.5 },
+  },
+};
+
+const fadeInAnimationCenter = {
+  initial: {
+    opacity: 0,
+    y: -100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1.5 },
+  },
+};
+
+const fadeInAnimationRight = {
+  initial: {
+    opacity: 0,
+    x: 100,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 1.5 },
+  },
+};
+
 const Services = () => {
   return (
     <section className="bg-zinc-100">
-      <div className="max-w-7xl mx-auto py-16 px-4">
+      <div className="max-w-7xl mx-auto py-16 px-4 overflow-x-hidden">
         <h2 className="text-3xl font-black text-center pb-8">
           Nuestros Servicios
         </h2>
         <div className="flex flex-col items-center md:flex-row md:justify-around md:items-start gap-8 py-8">
           <motion.div
             whileHover={{ scale: 1.07 }}
+            variants={fadeInAnimationLeft}
+            initial="initial"
+            whileInView="animate"
             className="bg-white rounded-lg text-center p-8 shadow-lg flex-1 min-h-80 flex flex-col justify-between items-center max-w-xs md:h-[380px]"
           >
             <Image
@@ -31,6 +70,9 @@ const Services = () => {
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.07 }}
+            variants={fadeInAnimationCenter}
+            initial="initial"
+            whileInView="animate"
             className="bg-white rounded-lg text-center p-8 shadow-lg flex-1 min-h-80 flex flex-col justify-between items-center max-w-xs md:h-[380px]"
           >
             <Image
@@ -60,6 +102,9 @@ const Services = () => {
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.07 }}
+            variants={fadeInAnimationRight}
+            initial="initial"
+            whileInView="animate"
             className="bg-white rounded-lg text-center p-8 shadow-lg flex-1 min-h-80 flex flex-col justify-between items-center max-w-xs md:h-[380px]"
           >
             <Image
